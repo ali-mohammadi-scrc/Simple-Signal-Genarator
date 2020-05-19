@@ -1,0 +1,50 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+msg                                                                               0x01D1      32
+UOv                                                                               0x01F1       2
+CSD                                                                               0x01F3       2
+SinData                                                                           0x01F5     100
+Step                                                                              0x0259     100
+OutData                                                                           0x02BD       2
+_base_y                                                                           0x02BF       4
+_lcd_x                                                                            0x02C3       1
+_lcd_y                                                                            0x02C4       1
+_lcd_maxx                                                                         0x02C5       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+Data                                                                              R4,R5        2
+State                                                                             R6,R7        2
+frq                                                                               R8,R9        2
+DC                                                                                R10,R11      2
+nOv                                                                               R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+timer0_ovf_isr                                                                    0x0010B     56
+timer2_ovf_isr                                                                    0x00143      1
+USART_Receive                                                                     0x00144      7
+StartSq                                                                           0x0014B     58
+StartSin                                                                          0x00185      9
+newSignal                                                                         0x0018E      8
+StateMachine                                                                      0x00196    158
+main                                                                              0x00234     82
+_lcd_write_nibble_G100                                                            0x00286     20
+_lcd_write_data                                                                   0x0029A     12
+lcd_gotoxy                                                                        0x002A6     17
+lcd_clear                                                                         0x002B7     14
+lcd_putchar                                                                       0x002C5     32
+lcd_puts                                                                          0x002E5     17
+lcd_init                                                                          0x002F6     47
+put_buff_G101                                                                     0x00325     60
+_print_G101                                                                       0x00361    308
+sprintf                                                                           0x00495     52
+strlen                                                                            0x004C9     12
+strlenf                                                                           0x004D5     13
